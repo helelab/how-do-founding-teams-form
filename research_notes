@@ -1,0 +1,54 @@
+### Model introduction
+
+- Elements: (definition)
+
+### Model scope
+What it does:
+- Spot patterns in founding team formation processes. 
+- Classify any given text provided by co-founders according to its most relevant element. 
+
+### Conclusions from the experiment:
+1) The more classes we use, the bigger the dataset should be to avoid underfitting.
+2) Longer sentences may be harder to train using the current LSTM model configuration.
+3) In turn, longer sentences are tougher to manually classify (label) because i) they may belong to different categories simultaneously, ii) they may be prone to subjective interpretations.
+4) As a consequence, differences across labels may lead to higher model errors.
+5) Potential measures to minimize model error:
+  i) Rely on a bigger training set.
+  ii) Get different human annotators label the same training set and then homogenize results by settling up label mismatches according to the majority rule.
+6) Given that we are using a word-to-vec encoding, the model does not take puntuation into account. Hence, sentence interpretation may be affected.
+7) The "sentence length paradox": Shorter sentences (3 - 5 words aprox.) are more suitable for training purposes, but longer sentences (5 - 20 words aprox.) were the most common sentences found during the web scraping process, which suggest we should adjust the model for longer sentence training. 
+
+
+### Webpages used to (manually) scrap the data:
+- https://guykawasaki.com/how-to-find-a-co-founder/
+- https://www.entrepreneur.com/article/244259
+- https://mashable.com/2011/12/25/how-co-founders-met/
+- https://news.ycombinator.com/item?id=1625947
+- https://www.quora.com/How-did-you-meet-your-co-founder-and-first-employee
+- https://www.quora.com/How-do-I-find-good-technical-co-founders-Is-there-any-particular-resource-or-technique-in-finding-competent-technical-co-founders
+- https://techcrunch.com/2017/02/18/co-founder-conflict/
+- https://www.entrepreneur.com/article/299214
+- https://www.techinasia.com/best-startup-founder-stories-2015
+- https://www.inc.com/sean-wise/how-to-start-a-successful-business-with-a-co-founder.html
+- https://wistia.com/learn/culture/founder-partnerships-that-last
+- https://yourstory.com/2015/06/startup-cofounders
+
+The scope of the web scraping process was limited to search results using the following sentences:
+- "How do you meet a cofounder?"
+- "How did you meet your cofounder?"
+- "Cofounder stories"
+- "Searching for a cofounder"
+- "Cofounder failure stories"
+
+* Note: Indeed, a good model relies on the quality of the data you feed it with, which is why data curation is a key process worth exploring further. 
+
+### IMPORTANCE:
+The LSTM model is anchored on the 10 Prepositions as described in the research paper. 
+This LSTM model will contribute in the following ways:
+- Spot patterns in founding team formation processes.
+- Set the ground for experimental testing of key research hypotheses.
+
+### FUTURE DEVELOPMENTS:
+- Automated web scraping and data cleansing to conduct experiments at a big scale
+- Char-to-vec encodings for higher granularity
+- Speech-to-text applications for automated audio transcripts using Google's APIs. This may be useful if in-depth interviews are to be conducted.
