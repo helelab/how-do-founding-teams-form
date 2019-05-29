@@ -10,7 +10,7 @@ What it does:
 ### Conclusions from the experiment:
 1) The more classes we use, the bigger the dataset should be to avoid underfitting.
 2) Longer sentences may be harder to train using the current LSTM model configuration.
-3) In turn, longer sentences are tougher to manually classify (label) because i) they may belong to different categories simultaneously, ii) they may be prone to subjective interpretations.
+3) In turn, longer sentences are harder to manually classify (label) because i) they may belong to different categories simultaneously, ii) they may be prone to subjective interpretations.
 4) As a consequence, differences across labels may lead to higher model errors.
 5) Potential measures to minimize model error:
   i) Rely on a bigger training set.
