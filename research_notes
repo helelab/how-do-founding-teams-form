@@ -33,6 +33,13 @@ What it does:
 - https://wistia.com/learn/culture/founder-partnerships-that-last
 - https://yourstory.com/2015/06/startup-cofounders
 - https://www.quora.com/How-do-I-find-a-co-founder-partner-for-my-startup-or-should-I-hire-I-am-already-working-on-my-startup-and-being-from-a-non-technical-background-I-have-outsourced-the-development-of-an-app-and-website
+- https://www.quora.com/How-did-you-evaluate-a-potential-co-founder
+- https://www.quora.com/How-do-I-approach-a-potential-co-founder
+- https://fi.co/insight/how-to-test-your-business-partnership-with-potential-co-founders
+- https://www.inc.com/dana-severson/founder-confessions-cofounder-relationships-gone-bad.html
+- https://www.entrepreneur.com/article/251679
+- https://www.entrepreneur.com/article/244259
+- https://mashable.com/2011/12/25/how-co-founders-met/
 
 The scope of the web scraping process was limited to search results using the following sentences:
 - "How do you meet a cofounder?"
@@ -40,6 +47,7 @@ The scope of the web scraping process was limited to search results using the fo
 - "Cofounder stories"
 - "Searching for a cofounder"
 - "Cofounder failure stories"
+- "How do you evaluate a potential cofounder?
 
 * Note: Indeed, a good model relies on the quality of the data you feed it with, which is why data curation is a key process worth exploring further. 
 
