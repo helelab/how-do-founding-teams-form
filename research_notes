@@ -1,11 +1,7 @@
-### Model introduction
-
-- Elements: (definition)
-
 ### Model scope
 What it does:
 - Spot patterns in founding team formation processes. 
-- Classify any given text provided by co-founders according to its most relevant element. 
+- Classify testimonies provided by co-founders according to the first 4 propositions of the research paper.  
 
 ### Conclusions from the experiment:
 1) The more classes we use, the bigger the dataset should be to avoid underfitting.
